@@ -27,12 +27,20 @@ public class CategoryService {
         Category category = findById(id);
         category.setName(categoryDetails.getName());
         category.setDescription(categoryDetails.getDescription());
+        category.setActive(categoryDetails.getActive());
         return categoryRepository.save(category);
+        
     }
 
     public void delete(Long id){
         Category category = findById(id);
         categoryRepository.delete(category);
     }
+
+        public Category deactivate(Long id) {
+            Category category = findById(id);
+            category.setActive(false);
+            return categoryRepository.save(category);
+        }
 }
     
