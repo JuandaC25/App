@@ -1,0 +1,22 @@
+package com.app.backend.dto;
+
+public class LoginRequest {
+    private String username;
+    private String password;
+
+    public LoginRequest(){
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public String getPassword(){
+        return password;
+    }
+
+    public void setPassword(String password){
+        this.password = password;
+    }
+    
+}

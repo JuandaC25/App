@@ -47,8 +47,14 @@
         </dependency>
         <dependency>
             <groupId>io.jsonwebtoken</groupId>
+            <artifactId>jjwt-impl</artifactId>
+            <version>0.12.5</version>
+            <scope>runtime</scope>
+        </dependency>
+        <dependency>
+            <groupId>io.jsonwebtoken</groupId>
             <artifactId>jjwt-jackson</artifactId>
-            <version>0.12.3</version>
+            <version>0.12.5</version>
             <scope>runtime</scope>
         </dependency>
         <dependency>
@@ -69,7 +75,7 @@
     </dependencies>
 
     <build>
-        <sourceDirectory>src/main/com/app/backend</sourceDirectory>
+    <sourceDirectory>src/main/java</sourceDirectory>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
